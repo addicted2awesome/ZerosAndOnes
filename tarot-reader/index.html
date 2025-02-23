@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Tarot Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mystic Tarot Reader</h1>
+        
+        <div class="question-section">
+            <label for="question">What question seeks illumination?</label>
+            <textarea id="question" placeholder="Enter your question or scenario..."></textarea>
+            <button id="drawCards">Reveal the Cards</button>
+        </div>
+
+        <div class="spread-section">
+            <div class="spread-container">
+                <div class="card" id="card1">
+                    <div class="card-inner">
+                        <div class="card-front"></div>
+                        <div class="card-back"></div>
+                    </div>
+                    <p class="position-meaning">Past</p>
+                </div>
+                <div class="card" id="card2">
+                    <div class="card-inner">
+                        <div class="card-front"></div>
+                        <div class="card-back"></div>
+                    </div>
+                    <p class="position-meaning">Present</p>
+                </div>
+                <div class="card" id="card3">
+                    <div class="card-inner">
+                        <div class="card-front"></div>
+                        <div class="card-back"></div>
+                    </div>
+                    <p class="position-meaning">Future</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="interpretation-section">
+            <h2>Card Interpretation</h2>
+            <div id="interpretation"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
