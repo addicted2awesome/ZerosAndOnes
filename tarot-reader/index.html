@@ -3,47 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystic Tarot Reader</title>
+    <title>Mystic Tarot | Unveil Your Destiny</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Mystic Tarot Reader</h1>
+        <h1>Mystic Tarot</h1>
+        <p class="subtitle">Unveil Your Destiny</p>
         
         <div class="question-section">
-            <label for="question">What question seeks illumination?</label>
-            <textarea id="question" placeholder="Enter your question or scenario..."></textarea>
-            <button id="drawCards">Reveal the Cards</button>
+            <label for="question">What mysteries do you seek to unravel?</label>
+            <textarea id="question" placeholder="Enter your question or contemplate your situation..."></textarea>
+            <button id="drawCards">Unveil the Arcana</button>
         </div>
 
         <div class="spread-section">
             <div class="spread-container">
                 <div class="card" id="card1">
                     <div class="card-inner">
-                        <div class="card-front"></div>
+                        <div class="card-front">
+                            <span class="card-name"></span>
+                            <span class="card-keywords"></span>
+                        </div>
                         <div class="card-back"></div>
                     </div>
-                    <p class="position-meaning">Past</p>
+                    <p class="position-meaning">Past Influences</p>
                 </div>
                 <div class="card" id="card2">
                     <div class="card-inner">
-                        <div class="card-front"></div>
+                        <div class="card-front">
+                            <span class="card-name"></span>
+                            <span class="card-keywords"></span>
+                        </div>
                         <div class="card-back"></div>
                     </div>
-                    <p class="position-meaning">Present</p>
+                    <p class="position-meaning">Present Energies</p>
                 </div>
                 <div class="card" id="card3">
                     <div class="card-inner">
-                        <div class="card-front"></div>
+                        <div class="card-front">
+                            <span class="card-name"></span>
+                            <span class="card-keywords"></span>
+                        </div>
                         <div class="card-back"></div>
                     </div>
-                    <p class="position-meaning">Future</p>
+                    <p class="position-meaning">Future Possibilities</p>
                 </div>
             </div>
         </div>
 
         <div class="interpretation-section">
-            <h2>Card Interpretation</h2>
+            <h2>Arcana Insights</h2>
             <div id="interpretation"></div>
         </div>
     </div>
